@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6 Month Surprise ❤</title>
+ 
+</head>
+<body> 
+  <style>* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  color: #333;
+  overflow-x: hidden;
+  overflow-y: auto;
+} 
+
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+   
+   
+    .hidden {
+      display: none;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      animation: slideInDown 1s ease-out;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      animation: slideInUp 1s ease-out;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: #ff7e5f;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      animation: fadeIn 2s ease-in-out;
+    }
+  
+
+.photo-card {
+  width: 200px;
+  height: 250px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 2rem;
+  perspective: 1000px;
+}
+
+.photo-card {
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.photo-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-back {
+  background: #ffe0e6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+    button:hover {
+      background: #eb5757;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  
+  
+
+
+
+
+  </style>
+  <!-- Romantic Background Music -->
+  
+
+  <div class="container" id="page1">
+    <h1>🎉 Crazy 7 Months Together 🤪</h1>
+    <p>Can you believe it's been 7 months already? From silly laughs to deep talks, every moment with you has been unforgettable. This page is just a crazy little start to remind us of all the memories we've made. Ready for more?</p>
+    <button onclick="nextPage(2)">Next ➡</button>
+  </div>
+
+  <div class="container hidden" id="page2">
+  <h1>💖 Happy 7 Month Anniversary 💖</h1>
+  <p>I’m so lucky to have you in my life. ❤</p>
+
+  <div class="photo-gallery">
+    <div class="photo-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./inmge/1ef6238df04564bc6092a5ad2cc6b2f9.jpg" alt="Her Smile" />
+        </div>
+        <div class="card-back">
+          <p>Her cute smile 🥺</p>
+        </div>
+      </div>
+    </div>
+    <div class="photo-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./inmge/IMG_20241101_092342_273.jpg" alt="Her Laugh" />
+        </div>
+        <div class="card-back">
+          <p>That laugh I love ❤️</p>
+        </div>
+      </div>
+    </div>
+    <div class="photo-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="./inmge/Snapchat-574654679.jpg" alt="Beautiful Moment" />
+        </div>
+        <div class="card-back">
+          <p>Just wow 😍</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="nextPage(3)">Next ➡</button>
+</div>
+
+
+
+  <div class="container hidden" id="page3">
+  <h1>📍 Long Distance, Infinite Love 💌</h1>
+  <p>Door ho, lekin dil ke sabse kareeb ho. Har pal tumhari yaadon mein khoya rehta hoon. I miss you so much it hurts sometimes, but I know our love is stronger than any distance. Jaldi milne ka intezaar hai! 💕</p>
+  
+  <p style="margin-top: 1rem;">🛣️ Distance from Meerut to Mumbai: <strong>~1,400 km</strong> (~870 miles)</p>
+
+  <!-- Google Map Embed -->
+  <div style="margin-top: 1rem; border: 2px solid #ff7e5f; border-radius: 10px; overflow: hidden;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2854145.8894427144!2d74.55741746513491!3d24.837674871203002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x390c6dc8dd8c9b87%3A0x1a8ed7e7a58af5b5!2sMeerut%2C%20Uttar%20Pradesh!3m2!1d28.9844618!2d77.7064137!4m5!1s0x3be7b63a1aaf643d%3A0x8acb6c7830a2d4b2!2sMumbai%2C%20Maharashtra!3m2!1d19.0760!2d72.8777!5e0!3m2!1sen!2sin!4v1715764578012!5m2!1sen!2sin"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <button onclick="goBack()">🔁 Start Again</button>
+</div>
+
+
+  <script>
+    function nextPage(pageNumber) {
+      for (let i = 1; i <= 3; i++) {
+        document.getElementById('page' + i).classList.add('hidden');
+      }
+      const nextPage = document.getElementById('page' + pageNumber);
+      nextPage.classList.remove('hidden');
+    }
+    function goBack() {
+      nextPage(1);
+    }
+  </script>
+</body>
+</html>
